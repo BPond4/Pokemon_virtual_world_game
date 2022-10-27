@@ -1,0 +1,17 @@
+
+
+Background: some or all of these could be moved to WorldModel. -- moved all to worldmodel -- done
+setBackground
+getBackgroundImage
+get/set background cell
+
+Entity:
+getCurrentImage -- left as static, means it could maybe be moved?? -- made instance -- done
+create____Action -- could be moved to action for continuity (return type) -- moved to functions() -- done
+
+Point: (method made (private static) and left in class) -- done
+adjacent -- left as static because multiple objects passed as parameters, 'this' probably wouldnt work
+
+WorldModel: (methods made (private static) and left in class) -- done
+nearestEntity -- doesn't use worldmodel data, could be moved to entity for continuity? 
+distanceSquared -- same as adjacent in point, also uses points so not sure
